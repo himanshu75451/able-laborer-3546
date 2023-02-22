@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Bag & In Store: Shoes, Jewelry, Clothing, Makeup, Dresses</title>
+    <style>
+        *{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #333;
+        }
+        .nav1{
+            width: 100%;
+            display:flex;
+            box-sizing: border-box;
+            align-items: center;
+            justify-content: space-between;
+            padding: 2px 30px;
+        }
+        /* #search{
+            padding: 3px 150px 3px 3px;
+        } */
+        .nav1 >div > img{
+            width: 25%;
+        }
+        .nav2{
+            width: 100%;
+            display:flex;
+            box-sizing: border-box;
+            align-items: center;
+            justify-content: space-around;
+            padding: 10px;
+        }
+        .nav2 > a{
+            text-decoration: none;
+            color: black;
+        }
+        a{
+            color: black;
+        }
+        a:hover{
+            box-shadow: black 0px 2px;
+        }
+        #banner > img{
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+        .heading{
+            text-align: center;
+            line-height: 10px;
+        }
+        .heading > hr{
+            border: 1px solid black;
+            margin-top: 60px;
+            margin-bottom: 50px;
+        }
+        .mid-1 > h2{
+            text-align: center;
+            line-height: 10px;
+        }
+        .mid-1 > p{
+            text-align: center;
+            line-height: 10px;
+        }
+        .mid-1 > a{
+            display: block;
+            text-align: center;
+            line-height: 10px;
+            margin-top: 20px;
+        }
+        .mid-1 > hr{
+            border: 1px solid black;
+            margin-top: 60px;
+            margin-bottom: 50px;
+        }
+        .mid-1 > div{
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+        }
+        .mid-1 > div > div > img{
+            width: 100%;
+            margin: auto;
+        }
+        .mid-2 > h2{
+            text-align: center;
+            line-height: 10px;
+            margin-bottom: 50px;
+        }
+        .mid-2 > div{
+            margin-bottom: 30px;
+        }
+        .mid-2 > div > img{
+            width: 100%;
+        }
+        .mid-2 > hr{
+            border: 1px solid black;
+            margin-top: 60px;
+            margin-bottom: 50px;
+        }
+        .mid-3 > h2{
+            text-align: center;
+            line-height: 10px;
+        }
+        .mid-3 > p{
+            text-align: center;
+            line-height: 10px;
+        }
+        .mid-3 > a{
+            display: block;
+            text-align: center;
+            line-height: 10px;
+            margin-top: 20px;
+        }
+        .mid-3 > div{
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+        }
+        .mid-3 > div > div > img{
+            width: 100%;
+            margin: auto;
+        }
+        .mid-4 > img{
+            width: 100%;
+            margin-top: 30px;
+        }
+        .mid-4 > hr{
+            border: 1px solid black;
+            margin-top: 60px;
+            margin-bottom: 50px;
+        }
+        .mid-5 > h2{
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .mid-5 > div{
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            text-align: center;
+            line-height: 10px;
+        }
+        .mid-5 > div > div > img{
+            width: 100%;
+        }
+        .mid-5 > div > div > img:hover{
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+        }
+        .mid-5 > hr{
+            border: 1px solid black;
+            margin-top: 60px;
+            margin-bottom: 90px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="nav1">
+        <div>
+            <img src="./Images/Green-Bag.png" alt="error">
+        </div>
+        <div class="search">
+            <input placeholder="Search for products" type="text" id="search">
+            <input type="submit" value="Search">
+        </div>
+        <div>
+            <a href="#">Sign In</a>
+        </div>
+        <div>
+            <a href="#">Cart</a>
+        </div>
+    </div>
+    <hr>
+    <div class="nav2">
+        <a href="#">Women</a>
+        <a href="#">Men</a>
+        <a href="#">Kids</a>
+        <a href="#">Designer</a>
+        <a href="#">Young Adult</a>
+        <a href="#">Activewear</a>
+        <a href="#">Home</a>
+        <a href="#">Beauty</a>
+        <a href="#">Gifts</a>
+    </div>
+
+    <!-- ---------------------------------------------------------------------------------- -->
+
+    <div id="banner"></div>
+    <script src="./index.js"></script>
+
+    <div class="heading">
+        <h2>Shop what you love—faster and easier.</h2>
+        <a href="#">Sign In or Create an Account</a>
+        <hr>
+    </div>
+
+    <!-- ------------------------------------------------------------------------------------- -->
+    <div class="mid-1">
+        <h2>CELEBRATING BLACK HISTORY MONTH</h2>
+        <p>Join us as we spotlight the Black voices shaping the future and cultivating so much beauty in our world.</p>
+        <a href="#">Shop Black Owned or Founded Brands</a>
+        <div>
+            <div>
+                <img src="https://n.nordstrommedia.com/id/b0238bfd-f714-4efe-b44e-258873f5c6b5.jpeg?h=522&w=804" alt="error">
+                <h3>Explore our celebration of Black fashion and design.</h3>
+                <a href="#">Shop & Explore</a> <a href="#">Meet the Designers</a>
+            </div>
+            <div>
+                <img src="https://n.nordstrommedia.com/id/badd8604-e278-4431-8878-c3170ebee6dc.jpeg?h=522&w=804" alt="error">
+                <h3>Closer to… Christina Funke Tegbe</h3>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+        <hr>
+     </div>
+
+     <!-- ----------------------------------------------------------------------------------- -->
+
+     <div class="mid-2">
+        <h2>TRENDING NOW</h2>
+        <div>
+            <img src="https://n.nordstrommedia.com/id/4529d44a-32cd-4223-b11b-4df55de6ae64.jpeg?h=700&w=1608" alt="error">
+            <img src="https://n.nordstrommedia.com/id/0701eed4-7f9d-4e08-bd43-af63d5780ff7.jpeg?h=700&w=1608" alt="error">
+            <img src="https://n.nordstrommedia.com/id/0def0408-7273-42e1-aa85-8974827ad4c0.jpeg?h=700&w=1608" alt="error">
+        </div>
+        <div>
+            <img src="https://n.nordstrommedia.com/id/631e3d81-3682-4ae3-b166-35266040f924.jpeg?h=200&w=1608" alt="error">
+        </div>
+
+        <div>
+            <img src="https://n.nordstrommedia.com/id/6a65b4e4-c9c1-4c75-ae48-2956cdc446ad.jpeg?h=700&w=1608" alt="error">
+            <img src="https://n.nordstrommedia.com/id/e087fffa-d755-421e-b0ac-da586c799287.jpeg?h=700&w=1608" alt="error">
+            <img src="https://n.nordstrommedia.com/id/c8ed1ce6-7f65-4d33-afe0-eb15fb1b5f33.jpeg?h=700&w=1608" alt="error">
+        </div>
+        <hr>
+     </div>
+
+     <!-- ---------------------------------------------------------------------------------------------- -->
+
+     <div class="mid-3">
+        <h2>THE THREAD</h2>
+        <p>Your go-to destination for all things fashion, beauty and lifestyle at Nordstrom, from how-tos and style inspiration to exclusive interviews and more.</p>
+        <a href="#">Get Inspired</a>
+        <div>
+            <div>
+                <img src="https://n.nordstrommedia.com/id/66ef9148-f43e-442b-9bd9-f6744f548b11.jpeg?h=516&w=536" alt="error">
+                <h3>The Denim Trends You'll Be Seeing <br> Everywhere in 2023</h3>
+                <a href="#">Read More</a>
+            </div>
+            <div>
+                <img src="https://n.nordstrommedia.com/id/507bcadd-a583-4c96-a953-db6decc2b9e6.jpeg?h=516&w=536" alt="error">
+                <h3>7 Fashion Items to Always Pack for Vacation</h3>
+                <a href="#">Read More</a>
+            </div>
+            <div>
+                <img src="	https://n.nordstrommedia.com/id/f51cc432-5a02-4013-91fc-e8fcad7a68ff.jpeg?h=516&w=536" alt="error">
+                <h3>Closer to… Diana Tsui</h3>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+     </div>
+
+     <div class="mid-4">
+        <img src="https://n.nordstrommedia.com/id/cbad3079-40d2-4cc4-91d1-ce4119935386.jpeg?h=400&w=1608" alt="error">
+        <img src="https://n.nordstrommedia.com/id/efd4b277-d554-4ccb-ac79-619c82d29cc9.jpeg?h=400&w=1608" alt="error">
+        <hr>
+     </div>
+
+     <!-- -------------------------------------------------------------------------------------------------- -->
+
+     <div class="mid-5">
+        <h2>SHOP BY CATEGORY</h2>
+        <div>
+            <div>
+                <img src="https://n.nordstrommedia.com/id/3a79c8dd-1647-47e4-8073-1434201940cc.jpeg?h=365&w=268" alt="error">
+                <h3>Women</h3>
+            </div>
+            <div>
+                <img src="https://n.nordstrommedia.com/id/1e3d17fa-6201-49c4-9e30-fe8a5b177450.jpeg?h=365&w=268" alt="error">
+                <h3>Men</h3>
+            </div>
+            <div>
+                <img src="https://n.nordstrommedia.com/id/32727450-d916-4504-a969-c7b37b3b639a.jpeg?h=365&w=268" alt="error">
+                <h3>Kids</h3>
+            </div>
+            <div>
+                <img src="https://n.nordstrommedia.com/id/0a8a88af-f220-4aa7-8967-624dae9f61e1.jpeg?h=365&w=268" alt="error">
+                <h3>Designer</h3>
+            </div>
+            <div>
+                <img src="https://n.nordstrommedia.com/id/a719053c-6780-436c-9629-3d4348925f1b.jpeg?h=365&w=268" alt="error">
+                <h3>Home</h3>
+            </div>
+            <div>
+                <img src="https://n.nordstrommedia.com/id/493aec1d-d38a-46ee-9b44-925f4425de60.jpeg?h=365&w=268" alt="error">
+                <h3>Beauty & Fragrance</h3>
+            </div>
+        </div>
+        <hr>
+     </div>
+</body>
+</html>
