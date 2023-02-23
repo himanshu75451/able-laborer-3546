@@ -1,0 +1,83 @@
+*{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #333;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.nav1{
+    width: 100%;
+    display:flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 20px;
+}
+.nav1 > div{
+    display: flex;
+}
+.searchIcon{
+    margin: 7px;
+    display: flex;
+    border: 1px solid rgb(146, 143, 143);
+    border-radius: 3px;
+    width: 600px;
+    height: 30px;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+}
+#search{
+    width: 100%;;
+    border: none;
+    outline: 0;
+    font-size: 20px;
+}
+.nav1 >div > a > img{
+    width: 200px;
+}
+.nav2{
+    width: 100%;
+    display:flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+.nav2 > a{
+    text-decoration: none;
+    color: black;
+}
+a{
+    color: black;
+}
+.nav2 > a:hover{
+    box-shadow: black 0px 2px;
+}
+#mid-7{
+    width: 100%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 25px 5px;
+    line-height: 15px;
+    padding-left: 300px;
+    margin-top: 40px;
+}
+#mid-7 > div > img{
+    width: 100%;
+    margin: auto;
+   
+}
+#mid-7 > div{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 10px;
+}
+#mid-7 > div > :nth-child(4){
+    color: red;
+}
+.Bimg > img{
+    width: 100%;
+    padding-left: 300px;
+    box-sizing: border-box;
+    margin-top: 20px;
+}

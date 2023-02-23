@@ -1,0 +1,236 @@
+*{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #333;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.nav1{
+    width: 100%;
+    display:flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 20px;
+}
+.nav1 > div{
+    display: flex; 
+}
+.searchIcon{
+    margin: 7px;
+    display: flex;
+    border: 1px solid rgb(146, 143, 143);
+    border-radius: 3px;
+    width: 600px;
+    height: 30px;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+}
+#search{
+    width: 100%;;
+    border: none;
+    outline: 0;
+    font-size: 20px;
+}
+.nav1 >div > a > img{
+    width: 200px;
+}
+.nav2{
+    width: 100%;
+    display:flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+.nav2 > a{
+    text-decoration: none;
+    color: black;
+}
+a{
+    color: black;
+}
+.nav2 > a:hover{
+    box-shadow: black 0px 2px;
+}
+#banner > img{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.heading{
+    text-align: center;
+    line-height: 10px;
+}
+.heading > hr{
+    border: 1px solid black;
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+.mid-1 > h2{
+    text-align: center;
+    line-height: 10px;
+}
+.mid-1 > p{
+    text-align: center;
+    line-height: 10px;
+}
+.mid-1 > a{
+    display: block;
+    text-align: center;
+}
+.mid-1 > hr{
+    border: 1px solid black;
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+.mid-1 > div{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.mid-1 > div > div > img{
+    width: 100%;
+    margin: auto;
+}
+.mid-2 > h2{
+    text-align: center;
+    line-height: 10px;
+    margin-bottom: 50px;
+}
+.mid-2 > div{
+    margin-bottom: 30px;
+}
+.mid-2 > div > img{
+    width: 100%;
+}
+.mid-2 > hr{
+    border: 1px solid black;
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+.mid-3 > h2{
+    text-align: center;
+    line-height: 10px;
+}
+.mid-3 > p{
+    text-align: center;
+    line-height: 10px;
+}
+.mid-3 > a{
+    display: block;
+    text-align: center;
+}
+.mid-3 > div{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.mid-3 > div > div > img{
+    width: 100%;
+    margin: auto;
+}
+.mid-4 > img{
+    width: 100%;
+    margin-top: 30px;
+}
+.mid-4 > hr{
+    border: 1px solid black;
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+.mid-5 > h2{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.mid-5 > div{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    text-align: center;
+    line-height: 10px;
+}
+.mid-5 > div > div > img{
+    width: 100%;
+}
+.mid-5 > div > div > a{
+    line-height: 20px;
+}
+.mid-5 > div > div > a > h3:hover{
+    font-weight: 500;
+}
+.mid-5 > hr{
+    border: 1px solid black;
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+.mid-6 > h2{
+    text-align: center;
+    line-height: 10px;
+}
+.mid-6 > p{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.mid-6 > div{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    text-align: center;
+    line-height: 10px;
+    gap: 10px;
+}
+.mid-6 > div > img{
+    width: 100%;
+}
+/* .mid-5 > div > div > a:hover{
+    box-shadow: black 0px 2px;
+} */
+.mid-6 > div > img:hover{
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+}
+.mid-7{
+    line-height: 10px;
+    margin-top: 70px;
+}
+.mid-7 > div{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 5px;
+    line-height: 15px;
+}
+.mid-7 > div > div > img{
+    width: 100%;
+}
+.mid-7 > div > div{
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.mid-7 > div > div > :nth-child(4){
+    color: red;
+}
+.footer{
+    width: 100%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 30px;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: rgb(233, 230, 230);
+}
+.footer > div > p:hover{
+    box-shadow: black 0px 2px;
+    cursor: pointer;
+}
+.footer2{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    gap: 30px;
+    padding: 0px 20px;
+    background-color: rgb(233, 230, 230);
+}
+.footer2 > p:hover{
+    box-shadow: black 0px 2px;
+    cursor: pointer;
+}

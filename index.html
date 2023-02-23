@@ -5,176 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Green Bag & In Store: Shoes, Jewelry, Clothing, Makeup, Dresses</title>
-    <style>
-        *{
-            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            color: #333;
-        }
-        .nav1{
-            width: 100%;
-            display:flex;
-            box-sizing: border-box;
-            align-items: center;
-            justify-content: space-between;
-            padding: 2px 30px;
-        }
-        /* #search{
-            padding: 3px 150px 3px 3px;
-        } */
-        .nav1 >div > img{
-            width: 25%;
-        }
-        .nav2{
-            width: 100%;
-            display:flex;
-            box-sizing: border-box;
-            align-items: center;
-            justify-content: space-around;
-            padding: 10px;
-        }
-        .nav2 > a{
-            text-decoration: none;
-            color: black;
-        }
-        a{
-            color: black;
-        }
-        a:hover{
-            box-shadow: black 0px 2px;
-        }
-        #banner > img{
-            width: 100%;
-            margin-top: 10px;
-            margin-bottom: 15px;
-        }
-        .heading{
-            text-align: center;
-            line-height: 10px;
-        }
-        .heading > hr{
-            border: 1px solid black;
-            margin-top: 60px;
-            margin-bottom: 50px;
-        }
-        .mid-1 > h2{
-            text-align: center;
-            line-height: 10px;
-        }
-        .mid-1 > p{
-            text-align: center;
-            line-height: 10px;
-        }
-        .mid-1 > a{
-            display: block;
-            text-align: center;
-            line-height: 10px;
-            margin-top: 20px;
-        }
-        .mid-1 > hr{
-            border: 1px solid black;
-            margin-top: 60px;
-            margin-bottom: 50px;
-        }
-        .mid-1 > div{
-            margin-top: 20px;
-            display: grid;
-            grid-template-columns: repeat(2,1fr);
-        }
-        .mid-1 > div > div > img{
-            width: 100%;
-            margin: auto;
-        }
-        .mid-2 > h2{
-            text-align: center;
-            line-height: 10px;
-            margin-bottom: 50px;
-        }
-        .mid-2 > div{
-            margin-bottom: 30px;
-        }
-        .mid-2 > div > img{
-            width: 100%;
-        }
-        .mid-2 > hr{
-            border: 1px solid black;
-            margin-top: 60px;
-            margin-bottom: 50px;
-        }
-        .mid-3 > h2{
-            text-align: center;
-            line-height: 10px;
-        }
-        .mid-3 > p{
-            text-align: center;
-            line-height: 10px;
-        }
-        .mid-3 > a{
-            display: block;
-            text-align: center;
-            line-height: 10px;
-            margin-top: 20px;
-        }
-        .mid-3 > div{
-            margin-top: 20px;
-            display: grid;
-            grid-template-columns: repeat(3,1fr);
-        }
-        .mid-3 > div > div > img{
-            width: 100%;
-            margin: auto;
-        }
-        .mid-4 > img{
-            width: 100%;
-            margin-top: 30px;
-        }
-        .mid-4 > hr{
-            border: 1px solid black;
-            margin-top: 60px;
-            margin-bottom: 50px;
-        }
-        .mid-5 > h2{
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        .mid-5 > div{
-            display: grid;
-            grid-template-columns: repeat(6,1fr);
-            text-align: center;
-            line-height: 10px;
-        }
-        .mid-5 > div > div > img{
-            width: 100%;
-        }
-        .mid-5 > div > div > img:hover{
-            box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
-        }
-        .mid-5 > hr{
-            border: 1px solid black;
-            margin-top: 60px;
-            margin-bottom: 90px;
-        }
-
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
     <div class="nav1">
         <div>
-            <img src="./Images/Green-Bag.png" alt="error">
-        </div>
-        <div class="search">
-            <input placeholder="Search for products" type="text" id="search">
-            <input type="submit" value="Search">
-        </div>
-        <div>
-            <a href="#">Sign In</a>
+            <a href="./index.html"><img src="./Images/Green-Bag.png" alt="error"></a>
+            <div class="searchIcon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input placeholder="Search for products" type="text" id="search">
+            </div>
         </div>
         <div>
-            <a href="#">Cart</a>
+            <div>
+                <a href="#">Sign In</a>
+            </div>
+            <div>
+                <a href="#">Cart</a>
+            </div>
         </div>
     </div>
     <hr>
     <div class="nav2">
-        <a href="#">Women</a>
+        <a href="./products.html">Women</a>
         <a href="#">Men</a>
         <a href="#">Kids</a>
         <a href="#">Designer</a>
@@ -188,7 +42,7 @@
     <!-- ---------------------------------------------------------------------------------- -->
 
     <div id="banner"></div>
-    <script src="./index.js"></script>
+    <script src="./script/index.js"></script>
 
     <div class="heading">
         <h2>Shop what you love—faster and easier.</h2>
@@ -241,7 +95,7 @@
 
      <div class="mid-3">
         <h2>THE THREAD</h2>
-        <p>Your go-to destination for all things fashion, beauty and lifestyle at Nordstrom, from how-tos and style inspiration to exclusive interviews and more.</p>
+        <p>Your go-to destination for all things fashion, beauty and lifestyle at Green bag, from how-tos and style inspiration to exclusive interviews and more.</p>
         <a href="#">Get Inspired</a>
         <div>
             <div>
@@ -275,30 +129,153 @@
         <div>
             <div>
                 <img src="https://n.nordstrommedia.com/id/3a79c8dd-1647-47e4-8073-1434201940cc.jpeg?h=365&w=268" alt="error">
-                <h3>Women</h3>
+                <a href="./products.html"><h3>Women</h3></a>
             </div>
             <div>
                 <img src="https://n.nordstrommedia.com/id/1e3d17fa-6201-49c4-9e30-fe8a5b177450.jpeg?h=365&w=268" alt="error">
-                <h3>Men</h3>
+                <a href="#"><h3>Men</h3></a>
             </div>
             <div>
                 <img src="https://n.nordstrommedia.com/id/32727450-d916-4504-a969-c7b37b3b639a.jpeg?h=365&w=268" alt="error">
-                <h3>Kids</h3>
+                <a href="#"><h3>Kids</h3></a>
             </div>
             <div>
                 <img src="https://n.nordstrommedia.com/id/0a8a88af-f220-4aa7-8967-624dae9f61e1.jpeg?h=365&w=268" alt="error">
-                <h3>Designer</h3>
+                <a href="#"><h3>Designer</h3></a>
             </div>
             <div>
                 <img src="https://n.nordstrommedia.com/id/a719053c-6780-436c-9629-3d4348925f1b.jpeg?h=365&w=268" alt="error">
-                <h3>Home</h3>
+                <a href="#"><h3>Home</h3></a>
             </div>
             <div>
                 <img src="https://n.nordstrommedia.com/id/493aec1d-d38a-46ee-9b44-925f4425de60.jpeg?h=365&w=268" alt="error">
-                <h3>Beauty & Fragrance</h3>
+                <a href="#"><h3>Beauty & Fragrance</h3></a>
             </div>
         </div>
         <hr>
      </div>
+
+     <!-- -------------------------------------------------------------------------------------------- -->
+
+     <div class="mid-6">
+        <h2>CURRENTLY LOVING</h2>
+        <p>Explore favorite looks from Instagram. Tag @Green bag to show us your finds.</p>
+        <div>
+            <img src="https://cdn.dashhudson.com/media/640/1639450121.23927782505.jpeg" alt="error">
+            <img src="https://images.dashhudson.com/aHR0cHM6Ly9jZG4uZGFzaGh1ZHNvbi5jb20vbWVkaWEvZnVsbC8xNjc0MDA0NDg0LjI1NDY3NjMyMzI0Ny5qcGVn.jpg?w=640&h=640&fit=cover" alt="error">
+            <img src="https://cdn.dashhudson.com/media/640/1638985643.81467653793.jpeg" alt="error">
+            <img src="https://cdn.dashhudson.com/media/640/1633576910.42796190538.jpeg" alt="error">
+        </div>
+     </div>
+
+     <div class="mid-7">
+        <h2>Trending Near You</h2>
+        <p>The most-viewed items by shoppers in your area</p>
+        <div>
+            <div>
+                <img src="https://n.nordstrommedia.com/id/sr3/26dfa87c-cfd4-450a-882b-c93847e4d86e.jpeg?q=45&dpr=2&h=365.31&w=230" alt="error">
+                <h3>Ribcage High Waist</h3>
+                <p>LEVI'S®</p>
+                <h3>INR 6,118.43 (30% off)</h3>
+                <h3><s>INR 8,740.62</s></h3>
+            </div>
+            <div>
+                <img src="https://n.nordstrommedia.com/id/sr3/ddd47c68-edf8-48db-9161-f1ed0cb94a60.jpeg?q=45&dpr=2&h=365.31&w=230" alt="error">
+                <h3>Facial Fuel Starter Kit</h3>
+                <p>KIEHL'S SINCE 1851</p>
+                <h3>INR 4,118.43 (30% off)</h3>
+                <h3><s>INR 5,740.62 </s></h3>
+            </div>
+            <div>
+                <img src="https://n.nordstrommedia.com/id/sr3/7928bc7d-f1c2-4d1a-8c03-744e5aaa3b7f.jpeg?h=365&w=240&dpr=2" alt="error">
+                <h3>Owen Valley Coat</h3>
+                <p>RODD & GUNN</p>
+                <h3>INR 9,748.81 (70% off)</h3>
+                <h3><s>INR 35,497.62</s></h3>
+            </div>
+            <div>
+                <img src="https://n.nordstrommedia.com/id/sr3/bad3ca2f-c609-452c-aea8-2fb733be8152.jpeg?q=45&dpr=2&h=365.31&w=230" alt="error">
+                <h3>Ultra Wear Lip</h3>
+                <p>CHANEL</p>
+                <h3>INR 4,118.43 (30% off)</h3>
+                <h3><s>INR 5,740.62</s></h3>
+            </div>
+            <div>
+                <img src="https://n.nordstrommedia.com/id/sr3/7d6abd92-d35a-458d-bb7a-84ea26896eec.jpeg?q=45&dpr=2&h=365.31&w=230" alt="error">
+                <h3>Face Oil</h3>
+                <p>KIEHL'S SINCE 1851</p>
+                <h3>INR 4,118.43 (30% off)</h3>
+                <h3><s>INR 12,040.65</s></h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------------------------------------------------------------------------------------------- -->
+
+    <div class="footer">
+        <div>
+            <h4>Customer Service</h4>
+            <p>Contact Us</p>
+            <p>Order Status</p>
+            <p>Shipping</p>
+            <p>Return Policy & Exchanges</p>
+            <p>Price Adjustments</p>
+            <p>Gift Cards</p>
+            <p>FAQ</p>
+            <p>Product Recalls</p>
+        </div>
+        <div>
+            <h4>About Us</h4>
+            <p>All Brands</p>
+            <p>Careers</p>
+            <p>Corporate Social Responsibility</p>
+            <p>Diversity, Inclusion & Belonging</p>
+            <p>Get Email Updates</p>
+            <p>Green bag Blog</p>
+            <p>The Thread</p>
+            <p>Green bag Podcast</p>
+        </div>
+        <div>
+            <h4>Stores & Services</h4>
+            <p>Find a Store</p>
+            <p>Free Style Help</p>
+            <p>Alterations & Tailoring</p>
+            <p>Pop-In Shop</p>
+            <p>Virtual Events</p>
+            <p>Spa Green bag</p>
+            <p>Green bag Restaurants</p>
+            <p>Green bag Local</p>
+        </div>
+        <div>
+            <h4>Green bag Card & Rewards</h4>
+            <p>The Nordy Club Rewards</p>
+            <p>Pay My Bill</p>
+            <p>Manage My Green bag Card</p>
+        </div>
+        <div>
+            <h4>Green bag, Inc.</h4>
+            <p>Green bag Rack</p>
+            <p>Green bag Canada</p>
+            <p>Investor Relations</p>
+            <p>Press Releases</p>
+            <p>Green bag Media Network</p>
+        </div>
+        <div>
+            <h4>Get our apps</h4>
+            <!-- <img src="https://grballet.com/wp-content/uploads/instagram-icon-logo-vector-download-450x450.png" alt="error"> -->
+            <img src="" alt="error">
+            <img src="" alt="error">
+            <img src="" alt="error">
+        </div>
+    </div>
+
+    <div class="footer2">
+        <p>Privacy</p>
+        <p>Do Not Sell My Personal Information</p>
+        <p>Terms & Conditions</p>
+        <p>Interest-Based Ads</p>
+        <p>©2023 Green bag, Inc.</p>
+        <p></p>
+    </div>
 </body>
 </html>
