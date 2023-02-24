@@ -1,0 +1,109 @@
+*{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #333;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.nav1{
+    width: 100%;
+    display:flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 20px;
+}
+.nav1 > div{
+    display: flex; 
+}
+.nav1 >div > a > img{
+    width: 200px;
+}
+.nav2{
+    width: 100%;
+    display:flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+.nav2 > a{
+    text-decoration: none;
+    color: black;
+}
+a{
+    color: black;
+}
+.nav2 > a:hover{
+    box-shadow: black 0px 2px;
+}
+
+form{
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 30px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+}
+form > div > img{
+    width: 50%;
+}
+.name{
+    width: 230px;
+    margin-top: 15px;
+    border: none;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+    border-radius: 3px;
+    font-size: 15px;
+    padding: 6px;
+    border-left: 1px solid black;
+}
+#submit{
+    width: 250px;
+    border: none;
+    margin-top: 15px;
+    padding: 10px 70px;
+    background-color: black;
+    color: #fff;
+    font-size: medium;
+    
+}
+label{
+    font-size:small;
+    color: rgb(82, 76, 76);
+    text-align: right;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    box-shadow: black 0px 2px;
+}
+
+.footer{
+    width: 100%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 30px;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: rgb(233, 230, 230);
+}
+.footer > div > p:hover{
+    box-shadow: black 0px 2px;
+    cursor: pointer;
+}
+.footer2{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    gap: 30px;
+    padding: 0px 20px;
+    background-color: rgb(233, 230, 230);
+}
+.footer2 > p:hover{
+    box-shadow: black 0px 2px;
+    cursor: pointer;
+}

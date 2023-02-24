@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Log-in-page.css">
+    <title>Green Bag & In Store: Shoes, Jewelry, Clothing, Makeup, Dresses</title>
+</head>
+<body>
+    <div class="nav1">
+        <div>
+            <a href="./index.html"><img src="./Images/Green-Bag.png" alt="error"></a>
+        </div>
+        <div>
+            <div>
+                <a href="./Log-in-page.html">Sign In</a>
+            </div>
+            <div>
+                <a href="#">Cart</a>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="nav2">
+        <a href="./products.html">Women</a>
+        <a href="#">Men</a>
+        <a href="#">Kids</a>
+        <a href="#">Designer</a>
+        <a href="#">Young Adult</a>
+        <a href="#">Activewear</a>
+        <a href="#">Home</a>
+        <a href="#">Beauty</a>
+        <a href="#">Gifts</a>
+    </div>
+
+    <form>
+        <div>
+            <img src="./Images/Untitled-1.png" alt="">
+            <h2>Log in</h2>
+        </div>
+        <input type="email" placeholder="Email" id="email" class="name"> <br/>
+        <input type="password" placeholder="Password" id="password" class="name"> <br>
+        <label for="">Forgot password?</label> <br>
+        <input type="submit" id="submit">
+        <h6> <hr> OR </hr></h6>
+
+        <p>Don't have an account?<a href="Sign-up-page.html"><b>Sign up</b></a></p>
+    </form>
+
+    <div class="footer">
+        <div>
+            <h4>Customer Service</h4>
+            <p>Contact Us</p>
+            <p>Order Status</p>
+            <p>Shipping</p>
+            <p>Return Policy & Exchanges</p>
+            <p>Price Adjustments</p>
+            <p>Gift Cards</p>
+            <p>FAQ</p>
+            <p>Product Recalls</p>
+        </div>
+        <div>
+            <h4>About Us</h4>
+            <p>All Brands</p>
+            <p>Careers</p>
+            <p>Corporate Social Responsibility</p>
+            <p>Diversity, Inclusion & Belonging</p>
+            <p>Get Email Updates</p>
+            <p>Green bag Blog</p>
+            <p>The Thread</p>
+            <p>Green bag Podcast</p>
+        </div>
+        <div>
+            <h4>Stores & Services</h4>
+            <p>Find a Store</p>
+            <p>Free Style Help</p>
+            <p>Alterations & Tailoring</p>
+            <p>Pop-In Shop</p>
+            <p>Virtual Events</p>
+            <p>Spa Green bag</p>
+            <p>Green bag Restaurants</p>
+            <p>Green bag Local</p>
+        </div>
+        <div>
+            <h4>Green bag Card & Rewards</h4>
+            <p>The Nordy Club Rewards</p>
+            <p>Pay My Bill</p>
+            <p>Manage My Green bag Card</p>
+        </div>
+        <div>
+            <h4>Green bag, Inc.</h4>
+            <p>Green bag Rack</p>
+            <p>Green bag Canada</p>
+            <p>Investor Relations</p>
+            <p>Press Releases</p>
+            <p>Green bag Media Network</p>
+        </div>
+        <div>
+            <h4>Get our apps</h4>
+            <!-- <img src="https://grballet.com/wp-content/uploads/instagram-icon-logo-vector-download-450x450.png" alt="error"> -->
+            <img src="" alt="error">
+            <img src="" alt="error">
+            <img src="" alt="error">
+        </div>
+    </div>
+
+    <div class="footer2">
+        <p>Privacy</p>
+        <p>Do Not Sell My Personal Information</p>
+        <p>Terms & Conditions</p>
+        <p>Interest-Based Ads</p>
+        <p>©2023 Green bag, Inc.</p>
+        <p></p>
+    </div>
+</body>
+
+<script>
+    let formData = document.querySelector("form");
+    let emailData = document.getElementById("email");
+    let passwordData = document.getElementById("password");
+
+    let MyData = JSON.parse(localStorage.getItem("signup-data"));
+    if(MyData === null)
+
+    formData.addEventListener("submit", function(event){
+        event.preventDefault();
+        let flag = false;
+
+        let formDB = {
+            email : emailData.value,
+            password : passwordData.value
+        }
+        MyData.push(formDB);
+        localStorage.setItem("login-data",JSON.stringify(MyData))
+        location.href = "./Index.html";
+    })
+</script>
+</html>

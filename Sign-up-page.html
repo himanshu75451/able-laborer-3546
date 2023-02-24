@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Sign-up-page.css">
+    <title>Green Bag & In Store: Shoes, Jewelry, Clothing, Makeup, Dresses</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="nav1">
+        <div>
+            <a href="./index.html"><img src="./Images/Green-Bag.png" alt="error"></a>
+        </div>
+        <div>
+            <div>
+                <a href="./Log-in-page.html">Sign In</a>
+            </div>
+            <div>
+                <a href="#">Cart</a>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="nav2">
+        <a href="./products.html">Women</a>
+        <a href="#">Men</a>
+        <a href="#">Kids</a>
+        <a href="#">Designer</a>
+        <a href="#">Young Adult</a>
+        <a href="#">Activewear</a>
+        <a href="#">Home</a>
+        <a href="#">Beauty</a>
+        <a href="#">Gifts</a>
+    </div>
+
+    <form>
+        <div>
+            <img src="./Images/Untitled-1.png" alt="">
+            <h2>Sign up</h2>
+        </div>
+        <input type="text" placeholder="First Name" id="firstName" class="name"> <br/>
+        <input type="text" placeholder="Last Name" id="lastname" class="name"> <br/>
+        <input type="email" placeholder="Email" id="email" class="name"> <br/>
+        <input type="number" placeholder="Phone No." id="phoneNo" class="name"> <br/>
+        <input type="password" placeholder="New Password" id="newpassword" class="name"> <br>
+        <input type="password" placeholder="Confirm Password" id="confirmpassword" class="name"> <br>
+        <input type="date" placeholder="Date of Birth" id="dob" class="name"> <br/>
+        <input type="submit" id="submit">
+        <h6> <hr> OR </hr></h6>
+
+        <p>Have an account? <a href="Log-in-page.html"> <b>Log in</b></a></p>
+    </form>
+
+    <div class="footer">
+        <div>
+            <h4>Customer Service</h4>
+            <p>Contact Us</p>
+            <p>Order Status</p>
+            <p>Shipping</p>
+            <p>Return Policy & Exchanges</p>
+            <p>Price Adjustments</p>
+            <p>Gift Cards</p>
+            <p>FAQ</p>
+            <p>Product Recalls</p>
+        </div>
+        <div>
+            <h4>About Us</h4>
+            <p>All Brands</p>
+            <p>Careers</p>
+            <p>Corporate Social Responsibility</p>
+            <p>Diversity, Inclusion & Belonging</p>
+            <p>Get Email Updates</p>
+            <p>Green bag Blog</p>
+            <p>The Thread</p>
+            <p>Green bag Podcast</p>
+        </div>
+        <div>
+            <h4>Stores & Services</h4>
+            <p>Find a Store</p>
+            <p>Free Style Help</p>
+            <p>Alterations & Tailoring</p>
+            <p>Pop-In Shop</p>
+            <p>Virtual Events</p>
+            <p>Spa Green bag</p>
+            <p>Green bag Restaurants</p>
+            <p>Green bag Local</p>
+        </div>
+        <div>
+            <h4>Green bag Card & Rewards</h4>
+            <p>The Nordy Club Rewards</p>
+            <p>Pay My Bill</p>
+            <p>Manage My Green bag Card</p>
+        </div>
+        <div>
+            <h4>Green bag, Inc.</h4>
+            <p>Green bag Rack</p>
+            <p>Green bag Canada</p>
+            <p>Investor Relations</p>
+            <p>Press Releases</p>
+            <p>Green bag Media Network</p>
+        </div>
+        <div>
+            <h4>Get our apps</h4>
+            <!-- <img src="https://grballet.com/wp-content/uploads/instagram-icon-logo-vector-download-450x450.png" alt="error"> -->
+            <img src="" alt="error">
+            <img src="" alt="error">
+            <img src="" alt="error">
+        </div>
+    </div>
+
+    <div class="footer2">
+        <p>Privacy</p>
+        <p>Do Not Sell My Personal Information</p>
+        <p>Terms & Conditions</p>
+        <p>Interest-Based Ads</p>
+        <p>©2023 Green bag, Inc.</p>
+        <p></p>
+    </div>
+
+</body>
+
+<script>
+    let form = document.querySelector("form");
+    let firstName = document.getElementById("firstName");
+    let lastName = document.getElementById("lastname");
+    let email = document.getElementById("email");
+    let phoneNo = document.getElementById("phoneNo");
+    let newpassword = document.getElementById("newpassword");
+    let confirmpassword = document.getElementById("confirmpassword");
+    let favfood = document.getElementById("favfood");
+    let Dob = document.getElementById("dob");
+
+    let MyData = [];
+
+    form.addEventListener("submit", function(event){
+    event.preventDefault();
+    let formDatabase = {
+        firstName : firstName.value,
+        lastName : lastName.value,
+        email : email.value,
+        phoneNo : phoneNo.value,
+        newpassword : newpassword.value,
+        confirmpassword : confirmpassword.value,
+        favfood : favfood.value,
+        Dob : Dob.value
+    }
+    MyData.push(formDatabase);
+    localStorage.setItem("signup-data",JSON.stringify(MyData))
+    // location.href = "./Log-in-page.html";
+  })
+  
+</script>
+</html>
