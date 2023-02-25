@@ -1,6 +1,7 @@
 *{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #333;
+    margin-top: 0;
     margin-left: 8px;
     margin-right: 8px;
 }
@@ -12,6 +13,10 @@
     justify-content: space-between;
     padding: 2px 20px;
     font-weight: bold;
+    position: fixed;
+    background-color: white;
+    z-index: 99999;
+    border-bottom: 2px solid;
 }
 .nav1 > div{
     display: flex; 
@@ -25,7 +30,11 @@
     box-sizing: border-box;
     align-items: center;
     justify-content: space-around;
-    padding: 10px;
+    padding: 20px;
+    position: fixed;
+    background-color: white;
+    z-index: 99999;
+    margin-top: 65px;
 }
 .nav2 > a{
     text-decoration: none;
@@ -37,21 +46,20 @@ a{
 .nav2 > a:hover{
     box-shadow: black 0px 2px;
 }
-
 form{
     width: 300px;
     margin: 0 auto;
-    margin-top: 30px;
     box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
     border-radius: 10px;
-    padding: 30px;
+    padding: 30px 70px;
     text-align: center;
+    margin-top: 150px;
 }
 form > div > img{
     width: 50%;
 }
 .name{
-    width: 230px;
+    width: 280px;
     margin-top: 15px;
     border: none;
     box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
@@ -61,13 +69,14 @@ form > div > img{
     border-left: 1px solid black;
 }
 #submit{
-    width: 250px;
+    width: 295px;
     border: none;
     margin-top: 15px;
     padding: 10px 70px;
     background-color: black;
     color: #fff;
     font-size: medium;
+    
 }
 #submit:hover{
     background-color: rgb(76, 75, 75);
@@ -79,9 +88,6 @@ label{
 }
 a{
     text-decoration: none;
-}
-a:hover{
-    box-shadow: black 0px 2px;
 }
 
 .footer{
@@ -95,7 +101,7 @@ a:hover{
     background-color: rgb(233, 230, 230);
 }
 .footer > div > p:hover{
-    box-shadow: black 0px 2px;
+    font-weight: bold;
     cursor: pointer;
 }
 .footer2{
@@ -109,4 +115,17 @@ a:hover{
 .footer2 > p:hover{
     box-shadow: black 0px 2px;
     cursor: pointer;
+}
+.links > div{  
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr); 
+}
+.links > div > a > img{
+    width: 170%;
+    margin-left: 0;
+}
+.links > div > a > img:hover{
+    background-color: #fff;
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Log-in-page.css">
+    <link rel="stylesheet" href="./CSS-Files.css/Log-in-page.css">
     <title>Green Bag & In Store: Shoes, Jewelry, Clothing, Makeup, Dresses</title>
 </head>
 <body>
@@ -25,13 +25,13 @@
     <div class="nav2">
         <a style="color: rgb(244, 78, 78);" href="./index.html">Home</a>
         <a href="./products.html">Women</a>
-        <a href="#">Men</a>
-        <a href="#">Kids</a>
-        <a href="#">Designer</a>
-        <a href="#">Young Adult</a>
-        <a href="#">Activewear</a>
-        <a href="#">Home</a>
-        <a href="#">Beauty</a>
+        <a href="./products2.html">Men</a>
+        <a href="./products2.html">Kids</a>
+        <a href="./products.html">Designer</a>
+        <a href="./products.html">Young Adult</a>
+        <a href="./products.html">Activewear</a>
+        <a href="./products.html">Home</a>
+        <a href="./products.html">Beauty</a>
         <a href="#">Gifts</a>
     </div>
 
@@ -97,12 +97,14 @@
             <p>Press Releases</p>
             <p>Green bag Media Network</p>
         </div>
-        <div>
+        <div class="links">
             <h4>Get our apps</h4>
-            <!-- <img src="https://grballet.com/wp-content/uploads/instagram-icon-logo-vector-download-450x450.png" alt="error"> -->
-            <img src="" alt="error">
-            <img src="" alt="error">
-            <img src="" alt="error">
+            <div>
+                <a href="https://www.instagram.com/nordstrom/?origin=footer&cm_sp=corp-_-corp_socialmedia-_-globalfooternav_instagram" target="_blank"><img src="./Images/84666.png" alt="error"></a>
+                <a href="https://in.pinterest.com/nordstrom/?cm_sp=corp-_-corp_socialmedia-_-globalfooternav_pinterest&origin=footer" target="_blank"><img src="./Images/82.png" alt="error"></a>
+                <a href="https://twitter.com/nordstrom?origin=footer&cm_sp=corp-_-corp_socialmedia-_-globalfooternav_twitter" target="_blank"><img src="./Images/845.png" alt="error"></a>
+                <a href="https://www.facebook.com/Nordstrom?origin=footer&cm_sp=corp-_-corp_socialmedia-_-globalfooternav_facebook" target="_blank"><img src="./Images/844.png" alt="error"></a>
+            </div>
         </div>
     </div>
 
@@ -133,8 +135,8 @@
             password : passwordData.value
         }
         MyData.push(formDB);
-        localStorage.setItem("login-data",JSON.stringify(MyData))
-        location.href = "./Index.html";
+        localStorage.setItem("signup-data",JSON.stringify(MyData))
+        location.href = "./index.html";
     })
 </script>
 </html>

@@ -4,16 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS-Files.css/Sign-up-page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./CSS-Files.css/products.css">
     <title>Green Bag & In Store: Shoes, Jewelry, Clothing, Makeup, Dresses</title>
-    <style>
-        
-    </style>
 </head>
 <body>
     <div class="nav1">
         <div>
             <a href="./index.html"><img src="./Images/Green-Bag.png" alt="error"></a>
+            <!-- <div > -->
+                <form class="searchIcon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input placeholder="Search for products" type="text" id="search">
+                </form>
+            <!-- </div> -->
         </div>
         <div>
             <div>
@@ -37,25 +41,88 @@
         <a href="./products.html">Beauty</a>
         <a href="#">Gifts</a>
     </div>
-
-    <form>
-        <div>
-            <img src="./Images/Untitled-1.png" alt="">
-            <h2>Sign up</h2>
+    <!--  -->
+    <div class="Bimg">
+        <h1>Our Top Fits</h1>
+        <p>Get free outfit ideas from our stylists <br> sent right to your inbox.</p>
+        <a href="#">Request a Look</a>
+    </div>
+    <div class="Bimg2">
+        <img src="https://n.nordstrommedia.com/id/bf7873ff-a0a6-4174-967b-801c6e83e801.jpeg?h=417&w=1334" alt="error">
+    </div>
+    <hr>
+    <div class="hello">
+        <div id="mid-07">
+            <hr>
+            <div>
+                <h4>Product Type</h4>
+                <p>+</p>
+            </div>
+            <hr>
+            <div>
+                <h4>Size</h4>
+                <p>+</p>
+            </div>
+            <hr>
+            <div>
+                <h4>Colour</h4>
+                <p>+</p>
+            </div>
+            <hr>
+            <div>
+                <h4>Brand</h4>
+                <p>+</p>
+            </div>
+            <hr>
+            <div>
+                <h4>Feature</h4>
+                <p>+</p>
+            </div>
+            <hr>
+            <div>
+                <h4>Fit</h4>
+                <p>+</p>
+            </div>
+            <hr>
+            <div>
+                <h4>Material</h4>
+                <p>+</p>
+            </div>
+            <hr>
+            <div>
+                <h4>Price</h4>
+                <p>+</p>
+            </div>
+            <hr>
+            <div>
+                <h4>Sale</h4>
+                <p>+</p>
+            </div>
+            <hr>
+            <div>
+                <h4>Sleeve Length</h4>
+                <p>+</p>
+            </div>
+            <hr>
+            <div>
+                <h4>Sports League</h4>
+                <p>+</p>
+            </div>
+            <hr>
+            <div>
+                <h4>Sports Team</h4>
+                <p>+</p>
+            </div>
+            <hr>
+            <div>
+                <h4>Style</h4>
+                <p>+</p>
+            </div>
+            <hr>
         </div>
-        <input type="text" placeholder="First Name" id="firstName" class="name"> <br/>
-        <input type="text" placeholder="Last Name" id="lastname" class="name"> <br/>
-        <input type="email" placeholder="Email" id="email" class="name"> <br/>
-        <input type="number" placeholder="Phone No." id="phoneNo" class="name"> <br/>
-        <input type="password" placeholder="New Password" id="newpassword" class="name"> <br>
-        <input type="password" placeholder="Confirm Password" id="confirmpassword" class="name"> <br>
-        <input type="date" placeholder="Date of Birth" id="dob" class="name"> <br/>
-        <input type="submit" id="submit">
-        <h6> <hr> OR </hr></h6>
-
-        <p>Have an account? <a href="Log-in-page.html"> <b>Log in</b></a></p>
-    </form>
-
+        <hr>
+        <div id="mid-7"></div>
+    </div>
     <div class="footer">
         <div>
             <h4>Customer Service</h4>
@@ -123,37 +190,6 @@
         <p>©2023 Green bag, Inc.</p>
         <p></p>
     </div>
-
 </body>
-
-<script>
-    let form = document.querySelector("form");
-    let firstName = document.getElementById("firstName");
-    let lastName = document.getElementById("lastname");
-    let email = document.getElementById("email");
-    let phoneNo = document.getElementById("phoneNo");
-    let newpassword = document.getElementById("newpassword");
-    let confirmpassword = document.getElementById("confirmpassword");
-    let favfood = document.getElementById("favfood");
-    let Dob = document.getElementById("dob");
-
-    let MyData = [];
-
-    form.addEventListener("submit", function(event){
-    event.preventDefault();
-    let formDatabase = {
-        firstName : firstName.value,
-        lastName : lastName.value,
-        email : email.value,
-        phoneNo : phoneNo.value,
-        newpassword : newpassword.value,
-        confirmpassword : confirmpassword.value,
-        Dob : Dob.value
-    }
-    MyData.push(formDatabase);
-    localStorage.setItem("signup-data",JSON.stringify(MyData))
-    location.href = "./Log-in-page.html";
-  })
-  
-</script>
+<script src="./script/products.js"></script>
 </html>

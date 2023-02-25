@@ -4,120 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./order-cart.css">
+    <link rel="stylesheet" href="./CSS-Files.css/order-cart.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <title>Green Bag & In Store: Shoes, Jewelry, Clothing, Makeup, Dresses</title>
-    <style>
-        *{
-            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            color: #333;
-            margin-left: 8px;
-            margin-right: 8px;
-        }
-        .nav1{
-            width: 100%;
-            display:flex;
-            box-sizing: border-box;
-            align-items: center;
-            justify-content: space-between;
-            padding: 2px 20px;
-            font-weight: bold;
-        }
-        .nav1 > div{
-            display: flex; 
-        }
-        .nav1 >div > a > img{
-            width: 200px;
-        }
-        .nav2{
-            width: 100%;
-            display:flex;
-            box-sizing: border-box;
-            align-items: center;
-            justify-content: space-around;
-            padding: 10px;
-        }
-        .nav2 > a{
-            text-decoration: none;
-            color: black;
-        }
-        a{
-            color: black;
-        }
-        .nav2 > a:hover{
-            box-shadow: black 0px 2px;
-        }
-
-
-        #mid-7{
-            width: 100%;
-            box-sizing: border-box;
-            display: grid;
-            grid-template-columns: repeat(5,1fr);
-            gap: 25px 5px;
-            line-height: 15px;
-            margin-top: 40px;
-        }
-        #mid-7 > div > img{
-            width: 100%;
-            margin: auto;
-        }
-        #mid-7 > div{
-            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-            padding: 10px;
-        }
-        #mid-7 > div > :nth-child(4){
-            color: red;
-        }
-
-        #mid-7 > div > button{
-            margin: 5px;
-            border: none;
-            padding: 6px 8px;
-            background-color: black;
-            /* margin-top: 25px;
-            margin-bottom: 25px; */
-            color: #fff;
-            font-weight: bold;
-        }
-        #mid-7 > div > button:hover{
-            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-            box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-        }
-
-
-        .footer{
-            width: 100%;
-            box-sizing: border-box;
-            display: grid;
-            grid-template-columns: repeat(6,1fr);
-            gap: 30px;
-            margin-top: 30px;
-            padding: 20px;
-            background-color: rgb(233, 230, 230);
-        }
-        .footer > div > p:hover{
-            box-shadow: black 0px 2px;
-            cursor: pointer;
-        }
-        .footer2{
-            width: 100%;
-            box-sizing: border-box;
-            display: flex;
-            gap: 30px;
-            padding: 0px 20px;
-            background-color: rgb(233, 230, 230);
-        }
-        .footer2 > p:hover{
-            box-shadow: black 0px 2px;
-            cursor: pointer;
-        }
-    </style>
 </head>
 <body>
     <div class="nav1">
         <div>
             <a href="./index.html"><img src="./Images/Green-Bag.png" alt="error"></a>
+            <form class="searchIcon">
+                <!-- <div class="searchIcon"> -->
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input placeholder="Search for products" type="text" id="search">
+                <!-- </div> -->
+            </form>
         </div>
         <div>
             <div>
@@ -132,13 +32,14 @@
     <div class="nav2">
         <a style="color: rgb(244, 78, 78);" href="./index.html">Home</a>
         <a href="./products.html">Women</a>
-        <a href="#">Men</a>
-        <a href="#">Kids</a>
-        <a href="#">Designer</a>
-        <a href="#">Young Adult</a>
-        <a href="#">Activewear</a>
-        <a href="#">Home</a>
-        <a href="#">Beauty</a>
+        <a href="./products.html">Women</a>
+        <a href="./products2.html">Men</a>
+        <a href="./products2.html">Kids</a>
+        <a href="./products.html">Designer</a>
+        <a href="./products.html">Young Adult</a>
+        <a href="./products.html">Activewear</a>
+        <a href="./products.html">Home</a>
+        <a href="./products.html">Beauty</a>
         <a href="#">Gifts</a>
     </div>
 
@@ -197,12 +98,14 @@
             <p>Press Releases</p>
             <p>Green bag Media Network</p>
         </div>
-        <div>
+        <div class="links">
             <h4>Get our apps</h4>
-            <!-- <img src="https://grballet.com/wp-content/uploads/instagram-icon-logo-vector-download-450x450.png" alt="error"> -->
-            <img src="" alt="error">
-            <img src="" alt="error">
-            <img src="" alt="error">
+            <div>
+                <a href="https://www.instagram.com/nordstrom/?origin=footer&cm_sp=corp-_-corp_socialmedia-_-globalfooternav_instagram" target="_blank"><img src="./Images/84666.png" alt="error"></a>
+                <a href="https://in.pinterest.com/nordstrom/?cm_sp=corp-_-corp_socialmedia-_-globalfooternav_pinterest&origin=footer" target="_blank"><img src="./Images/82.png" alt="error"></a>
+                <a href="https://twitter.com/nordstrom?origin=footer&cm_sp=corp-_-corp_socialmedia-_-globalfooternav_twitter" target="_blank"><img src="./Images/845.png" alt="error"></a>
+                <a href="https://www.facebook.com/Nordstrom?origin=footer&cm_sp=corp-_-corp_socialmedia-_-globalfooternav_facebook" target="_blank"><img src="./Images/844.png" alt="error"></a>
+            </div>
         </div>
     </div>
 
@@ -215,5 +118,5 @@
         <p></p>
     </div>
 </body>
-<script src="./order-cart.js"></script>
+<script src="./script/order-cart.js"></script>
 </html>

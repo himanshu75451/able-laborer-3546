@@ -35,11 +35,11 @@ function Display(data){
         
         
         //console.log(data)
-        buy.textContent = `${"Add to Bag"}`;
+        buy.textContent = "Add to Bag";
         title.textContent = product.title;
         image.src = product.image;
         price.textContent = `INR ${product.price}`;
-        dprice.textContent =`INR ${product.disprice}`;
+        dprice.textContent =`INR ${product.disprice} (30% off)`;
         brand.textContent = product.brand;
 
         buy.addEventListener("click",() =>{
