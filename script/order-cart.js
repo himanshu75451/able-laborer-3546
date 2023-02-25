@@ -52,7 +52,7 @@ function Display(data){
     
     let sum = 0;
     for(let x=0; x<ProductData.length; x++){
-        sum+=(Number(ProductData[x].price) * Number(ProductData[x].quantity));
+        sum+=(Number(ProductData[x].disprice) * Number(ProductData[x].quantity));
     }
     total.textContent = sum;
 }
