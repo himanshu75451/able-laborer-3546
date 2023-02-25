@@ -12,15 +12,15 @@ async function FetchData(){
 }
 FetchData();
 
-//let ProductData = JSON.parse(localStorage.getItem("card-data")) || [];
+let ProductData = JSON.parse(localStorage.getItem("card-data")) || [];
 let Container = document.getElementById("mid-7");
 
-// form.addEventListener("submit",(e) => {
-//     e.preventDefault();
-//     let searchData = request.filter((element) => element.title.toLowerCase().includes(form.search.value.toLowerCase()));
-//     Display(searchData);
-//     console.log(searchData)
-// }) 
+form.addEventListener("submit",(e) => {
+    e.preventDefault();
+    let searchData = request.filter((element) => element.title.toLowerCase().includes(form.search.value.toLowerCase()));
+    Display(searchData);
+    console.log(searchData)
+}) 
 
 function Display(data){
     Container.innerHTML = "";
@@ -31,16 +31,37 @@ function Display(data){
         let price = document.createElement("s");
         let dprice = document.createElement("h3");
         let brand = document.createElement("p");
+        let buy = document.createElement("button")
         
         
         //console.log(data)
+        buy.textContent = `${"Add to Bag"}`;
         title.textContent = product.title;
         image.src = product.image;
         price.textContent = `INR ${product.price}`;
         dprice.textContent =`INR ${product.disprice}`;
         brand.textContent = product.brand;
 
-        card.append(image,title,brand,dprice,price)
+        buy.addEventListener("click",() =>{
+            if(checkOrder(product)){
+            alert("Product Already in Card");
+            }else{
+            ProductData.push({...product,quantity:1});
+            localStorage.setItem("card-data",JSON.stringify(ProductData))
+            alert("Product Added");
+            }
+        });
+
+        card.append(image,title,brand,dprice,price,buy)
         Container.append(card);
     });
 }
+
+function checkOrder(product){
+    for(let x=0; x<ProductData.length; x++){
+        if(ProductData[x].id === product.id){
+            return true
+        }
+    }
+    return false
+    }

@@ -4,10 +4,114 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Sign-up-page.css">
+    <link rel="stylesheet" href="./order-cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <title>Green Bag & In Store: Shoes, Jewelry, Clothing, Makeup, Dresses</title>
     <style>
-        
+        *{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #333;
+            margin-left: 8px;
+            margin-right: 8px;
+        }
+        .nav1{
+            width: 100%;
+            display:flex;
+            box-sizing: border-box;
+            align-items: center;
+            justify-content: space-between;
+            padding: 2px 20px;
+            font-weight: bold;
+        }
+        .nav1 > div{
+            display: flex; 
+        }
+        .nav1 >div > a > img{
+            width: 200px;
+        }
+        .nav2{
+            width: 100%;
+            display:flex;
+            box-sizing: border-box;
+            align-items: center;
+            justify-content: space-around;
+            padding: 10px;
+        }
+        .nav2 > a{
+            text-decoration: none;
+            color: black;
+        }
+        a{
+            color: black;
+        }
+        .nav2 > a:hover{
+            box-shadow: black 0px 2px;
+        }
+
+
+        #mid-7{
+            width: 100%;
+            box-sizing: border-box;
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            gap: 25px 5px;
+            line-height: 15px;
+            margin-top: 40px;
+        }
+        #mid-7 > div > img{
+            width: 100%;
+            margin: auto;
+        }
+        #mid-7 > div{
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            padding: 10px;
+        }
+        #mid-7 > div > :nth-child(4){
+            color: red;
+        }
+
+        #mid-7 > div > button{
+            margin: 5px;
+            border: none;
+            padding: 6px 8px;
+            background-color: black;
+            /* margin-top: 25px;
+            margin-bottom: 25px; */
+            color: #fff;
+            font-weight: bold;
+        }
+        #mid-7 > div > button:hover{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+        }
+
+
+        .footer{
+            width: 100%;
+            box-sizing: border-box;
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            gap: 30px;
+            margin-top: 30px;
+            padding: 20px;
+            background-color: rgb(233, 230, 230);
+        }
+        .footer > div > p:hover{
+            box-shadow: black 0px 2px;
+            cursor: pointer;
+        }
+        .footer2{
+            width: 100%;
+            box-sizing: border-box;
+            display: flex;
+            gap: 30px;
+            padding: 0px 20px;
+            background-color: rgb(233, 230, 230);
+        }
+        .footer2 > p:hover{
+            box-shadow: black 0px 2px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -38,23 +142,12 @@
         <a href="#">Gifts</a>
     </div>
 
-    <form>
-        <div>
-            <img src="./Images/Untitled-1.png" alt="">
-            <h2>Sign up</h2>
-        </div>
-        <input type="text" placeholder="First Name" id="firstName" class="name"> <br/>
-        <input type="text" placeholder="Last Name" id="lastname" class="name"> <br/>
-        <input type="email" placeholder="Email" id="email" class="name"> <br/>
-        <input type="number" placeholder="Phone No." id="phoneNo" class="name"> <br/>
-        <input type="password" placeholder="New Password" id="newpassword" class="name"> <br>
-        <input type="password" placeholder="Confirm Password" id="confirmpassword" class="name"> <br>
-        <input type="date" placeholder="Date of Birth" id="dob" class="name"> <br/>
-        <input type="submit" id="submit">
-        <h6> <hr> OR </hr></h6>
-
-        <p>Have an account? <a href="Log-in-page.html"> <b>Log in</b></a></p>
-    </form>
+    <div>
+        <h1 id="total">
+            Your total order value is :- <span id="total-price">0</span>
+        </h1>
+    </div>
+    <div id="mid-7"> </div>
 
     <div class="footer">
         <div>
@@ -121,38 +214,6 @@
         <p>©2023 Green bag, Inc.</p>
         <p></p>
     </div>
-
 </body>
-
-<script>
-    let form = document.querySelector("form");
-    let firstName = document.getElementById("firstName");
-    let lastName = document.getElementById("lastname");
-    let email = document.getElementById("email");
-    let phoneNo = document.getElementById("phoneNo");
-    let newpassword = document.getElementById("newpassword");
-    let confirmpassword = document.getElementById("confirmpassword");
-    let favfood = document.getElementById("favfood");
-    let Dob = document.getElementById("dob");
-
-    let MyData = [];
-
-    form.addEventListener("submit", function(event){
-    event.preventDefault();
-    let formDatabase = {
-        firstName : firstName.value,
-        lastName : lastName.value,
-        email : email.value,
-        phoneNo : phoneNo.value,
-        newpassword : newpassword.value,
-        confirmpassword : confirmpassword.value,
-        favfood : favfood.value,
-        Dob : Dob.value
-    }
-    MyData.push(formDatabase);
-    localStorage.setItem("signup-data",JSON.stringify(MyData))
-    location.href = "./Log-in-page.html";
-  })
-  
-</script>
+<script src="./order-cart.js"></script>
 </html>

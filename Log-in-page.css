@@ -11,6 +11,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 2px 20px;
+    font-weight: bold;
 }
 .nav1 > div{
     display: flex; 
@@ -67,7 +68,9 @@ form > div > img{
     background-color: black;
     color: #fff;
     font-size: medium;
-    
+}
+#submit:hover{
+    background-color: rgb(76, 75, 75);
 }
 label{
     font-size:small;

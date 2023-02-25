@@ -11,6 +11,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 2px 20px;
+    font-weight: bold;
 }
 .nav1 > div{
     display: flex; 
@@ -219,7 +220,7 @@ a{
     background-color: rgb(233, 230, 230);
 }
 .footer > div > p:hover{
-    box-shadow: black 0px 2px;
+    font-weight: bold;
     cursor: pointer;
 }
 .footer2{
