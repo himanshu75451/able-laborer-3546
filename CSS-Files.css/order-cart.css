@@ -5,6 +5,9 @@
     margin-left: 8px;
     margin-right: 8px;
 }
+a:hover{
+    font-weight: bold;
+}
 .nav1{
     width: 100%;
     display:flex;
@@ -12,7 +15,6 @@
     align-items: center;
     justify-content: space-between;
     padding: 2px 20px;
-    font-weight: bold;
     position: fixed;
     background-color: white;
     z-index: 99999;
@@ -93,8 +95,6 @@ a{
     border: none;
     padding: 6px 8px;
     background-color: black;
-    /* margin-top: 25px;
-    margin-bottom: 25px; */
     color: #fff;
     font-weight: bold;
 }

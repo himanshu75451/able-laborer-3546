@@ -5,6 +5,9 @@
     margin-left: 8px;
     margin-right: 8px;
 }
+a:hover{
+    font-weight: bold;
+}
 .nav1{
     width: 100%;
     display:flex;
@@ -12,7 +15,6 @@
     align-items: center;
     justify-content: space-between;
     padding: 2px 20px;
-    font-weight: bold;
     position: fixed;
     background-color: white;
     z-index: 99999;
@@ -63,6 +65,13 @@ a{
 .nav2 > a:hover{
     box-shadow: black 0px 2px;
 }
+.banner01{
+    width: 25%;
+    margin-top: 40px;
+    position: absolute;
+    left: 900px;
+    margin-top: 250px;
+}
 #banner > img{
     width: 100%;
     margin-top: 130px;
@@ -108,11 +117,23 @@ a{
     line-height: 10px;
     margin-bottom: 50px;
 }
-.mid-2 > div{
-    margin-bottom: 30px;
+.midbox1{
+    width: 25%;
+    margin-top: 40px;
+    position: absolute;
+    left: 850px;
+    margin-top: 200px;
+}
+.midbox2{
+    width: 25%;
+    margin-top: 40px;
+    position: absolute;
+    left: 350px;
+    margin-top: 20px;
 }
 .mid-2 > div > img{
     width: 100%;
+    margin-bottom: 30px;
 }
 .mid-2 > hr{
     border: 1px solid black;
@@ -261,7 +282,6 @@ a{
     padding: 10px 30px;
     border-radius: 6px;
     font-size: medium;
-    
 }
 .box02 > button:hover{
     font-weight: bold;

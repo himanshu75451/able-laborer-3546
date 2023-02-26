@@ -5,6 +5,9 @@
     margin-left: 8px;
     margin-right: 8px;
 }
+a:hover{
+    font-weight: bold;
+}
 .nav1{
     width: 100%;
     display:flex;
@@ -12,7 +15,6 @@
     align-items: center;
     justify-content: space-between;
     padding: 2px 20px;
-    font-weight: bold;
     position: fixed;
     background-color: white;
     z-index: 99999;
@@ -59,6 +61,10 @@ form{
 form > div > img{
     width: 50%;
 }
+
+#heading{
+    color: red;
+}
 .name{
     width: 230px;
     margin-top: 15px;
@@ -86,10 +92,6 @@ label{
     color: rgb(82, 76, 76);
     text-align: right;
 }
-a{
-    text-decoration: none;
-}
-
 .footer{
     width: 100%;
     box-sizing: border-box;
