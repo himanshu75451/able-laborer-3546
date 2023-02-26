@@ -140,11 +140,19 @@ a{
     width: 100%;
     margin: auto;
 }
-.mid-4 > img{
+.Bimg{
+    width: 40%;
+    margin-top: 40px;
+    position: absolute;
+    left: 100px;
+    margin-top: 100px;
+}
+.Bimg2 >img{
     width: 100%;
+    box-sizing: border-box;
     margin-top: 30px;
 }
-.mid-4 > hr{
+.Bimg2 > hr{
     border: 1px solid black;
     margin-top: 60px;
     margin-bottom: 50px;
@@ -218,13 +226,63 @@ a{
 .mid-7 > div > div > :nth-child(4){
     color: red;
 }
+.mid-7 > hr{
+    border: 1px solid black;
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
+.box01{
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.box02 > a{
+    text-decoration: none;
+    font-weight: bold;
+}
+.box02 > a:hover{
+    box-shadow: black 0px 2px;
+}
+.box02 > div{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    padding: 20px;
+}
+.box02 > div > img{
+    width: 100%;
+}
+.box02 > button{
+    margin: auto;
+    display: block;
+    margin-top: 20px;
+    padding: 10px 30px;
+    border-radius: 6px;
+    font-size: medium;
+    
+}
+.box02 > button:hover{
+    font-weight: bold;
+}
+
+.box00{
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(227, 221, 221);
+    padding: 30px;
+    margin-top: 60px;
+
+}
+
 .footer{
     width: 100%;
     box-sizing: border-box;
     display: grid;
     grid-template-columns: repeat(6,1fr);
     gap: 30px;
-    margin-top: 30px;
+    margin-top: 10px;
     padding: 20px;
     background-color: rgb(233, 230, 230);
 }
