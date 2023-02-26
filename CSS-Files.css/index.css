@@ -335,3 +335,199 @@ a{
 .links > div > a > img:hover{
     background-color: #fff;
 }
+
+@media only screen and (max-width: 1050px){
+    .searchIcon{
+        width: 450px;
+        height: 30px;
+    }
+    .banner01{
+        left: 700px;
+        margin-top: 150px;
+    }
+    .midbox1{
+        left: 700px;
+        margin-top: 100px;
+    }
+    .midbox2{
+        width: 40%;
+        left: 220px;
+        margin-top: 10px;
+        line-height: 15px;
+    }
+}
+
+@media only screen and (max-width: 720px){
+    .nav1{
+        padding: 0px 0px;
+        padding-right: 20px;
+    }
+    .searchIcon{
+        width: 250px;
+        height: 30px;
+    }
+    .banner01{
+        width: 30%;
+        left: 470px;
+        margin-top: 150px;
+    }
+    .banner01 > p{
+        display: none;
+    }
+    
+    .midbox1{
+        width: 30%;
+        left: 460px;
+        margin-top: 50px; 
+        font-size: small; 
+    }
+    .midbox1 > a{
+        display: none;
+    }
+    .midbox2{
+        width: 60%;
+        left: 160px;
+        margin-top: 20px;
+        line-height: 15px;
+    }
+    .midbox2 > p{
+        display: none;
+    }
+    .box01 > div > img{
+        width: 100%;
+    }
+    .Bimg{
+        width: 60%;
+        margin-top: 40px;
+        position: absolute;
+        left: 80px;
+        margin-top: 50px;
+    }
+    .mid-7 > div{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 5px;
+        line-height: 15px;
+    }
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 10px;
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 440px){
+
+    .nav1{
+        padding: 10px 0px;
+        padding-right: 20px;
+    }
+    .nav1 >div > a > img{
+        width: 160px;
+    }
+    .searchIcon{
+        display: none;
+    }
+    .nav2{
+        display: none;
+    }
+    #banner > img{
+        width: 100%;
+        margin-top: 80px;
+        margin-bottom: 15px;
+    }
+    .banner01{
+        width: 30%;
+        left: 280px;
+        margin-top: 100px;
+        font-size: x-small;
+    }
+    .banner01 > a{
+        display: none;
+    }
+    .heading{
+        text-align: center;
+        line-height: 25px;
+    }
+    .midbox1{
+        width: 30%;
+        left: 280px;
+        margin-top: 50px; 
+        font-size: x-small; 
+    }
+    .midbox1 > p{
+        display: none;
+    }
+    .midbox2{
+        width: 50%;
+        left: 90px;
+        margin-top: 8px;
+        line-height: 5px;
+    }
+    .Bimg{
+        width: 60%;
+        margin-top: 40px;
+        position: absolute;
+        left: 20px;
+        margin-top: 40px;
+        font-size: small;
+    }
+    .Bimg > a{
+        display: none;
+    }
+    .mid-1 > h2{
+        text-align: center;
+        line-height: 25px;
+    }
+    .mid-1 > p{
+        text-align: center;
+        line-height: 20px;
+    }
+    .mid-1 > div{
+        margin-top: 20px;
+        display: grid;
+        gap: 10px 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .mid-3 > div{
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 10px 10px;
+    }
+    .mid-3 > p{
+        line-height: 20px;
+    }
+
+    .mid-5 > div{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        text-align: center;
+        line-height: 10px;
+    }
+    .mid-6 > div{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .mid-7 > div{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 15px 5px;
+        line-height: 20px;
+    }
+    .box02 > div{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .footer2{
+        display: none;
+    }
+
+}
