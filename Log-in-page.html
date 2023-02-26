@@ -40,6 +40,7 @@
         <div>
             <img src="./Images/Untitled-1.png" alt="">
             <h2>Log in</h2>
+            <h1 id="heading"></h1>
         </div>
         <input type="email" placeholder="Email" id="email" class="name"> <br/>
         <input type="password" placeholder="Password" id="password" class="name"> <br>
@@ -123,21 +124,28 @@
     let formData = document.querySelector("form");
     let emailData = document.getElementById("email");
     let passwordData = document.getElementById("password");
+    let heading = document.getElementById("heading");
 
     let MyData = JSON.parse(localStorage.getItem("signup-data"));
-    if(MyData === null)
+    if(MyData === null){
+        MyData = [];
+    }
 
     formData.addEventListener("submit", function(event){
         event.preventDefault();
         let flag = false;
+        MyData.forEach((element) => {
+            if(element.email == emailData.value && element.password == passwordData.value){
+                flag= true;
+            }  
+        });
 
-        let formDB = {
-            email : emailData.value,
-            password : passwordData.value
+        if(flag == true){
+            heading.innerText = "Sign in Successful"
+            location.href = "./index.html";
+        }else{
+            heading.innerText = "Wrong Credentials"
         }
-        MyData.push(formDB);
-        localStorage.setItem("signup-data",JSON.stringify(MyData))
-        location.href = "./index.html";
-    })
+    });
 </script>
 </html>
