@@ -109,7 +109,7 @@ a{
     left: 100px;
     margin-top: 200px;
 }
-.Bimg2 >img{
+.Bimg2 >img{    
     width: 100%;
     box-sizing: border-box;
     margin-top: 130px;
@@ -170,4 +170,89 @@ a{
 }
 .links > div > a > img:hover{
     background-color: #fff;
+}
+@media only screen and (max-width: 1050px){
+    .searchIcon{
+        width: 450px;
+        height: 30px;
+    }
+}
+@media only screen and (max-width: 720px){
+    .nav1{
+        padding: 0px 0px;
+        padding-right: 20px;
+    }
+    .searchIcon{
+        width: 250px;
+        height: 30px;
+    }
+    #banner > img{
+        width: 100%;
+        height: 250px;
+    }
+    .Bimg{
+        width: 40%;
+        margin-top: 40px;
+        position: absolute;
+        left: 50px;
+        margin-top: 170px;
+    }
+    #mid-7{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        line-height: 20px;
+    }
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 10px;
+        padding: 10px;
+    }
+}
+@media only screen and (max-width: 440px){
+
+    .nav1{
+        padding: 10px 0px;
+        padding-right: 20px;
+    }
+    .nav1 >div > a > img{
+        width: 160px;
+    }
+    .searchIcon{
+        display: none;
+    }
+    .nav2{
+        display: none;
+    }
+    .Bimg{
+        width: 35%;
+        left: 30px;
+        margin-top: 95px;
+        font-size: xx-small;
+    }
+    .Bimg2 >img{
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: 90px;
+        margin-bottom: 15px;
+    }
+    #mid-07{
+        display: none;
+    }
+    hr{
+        display: none;
+    }
+    #mid-7{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 25px 10px;
+        line-height: 20px;
+    }
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .footer2{
+        display: none;
+    }
 }

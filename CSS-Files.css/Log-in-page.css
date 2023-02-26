@@ -131,3 +131,42 @@ label{
 .links > div > a > img:hover{
     background-color: #fff;
 }
+
+@media only screen and (max-width: 720px){
+    .nav1{
+        padding: 0px 0px;
+        padding-right: 20px;
+    }
+    form{
+        margin-top: 170px;
+    }
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 10px;
+        padding: 10px;
+    }
+}
+@media only screen and (max-width: 440px){
+
+    .nav1{
+        padding: 10px 0px;
+        padding-right: 20px;
+    }
+    .nav1 >div > a > img{
+        width: 160px;
+    }
+    .nav2{
+        display: none;
+    }
+    form{
+        margin-top: 100px;
+    }
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .footer2{
+        display: none;
+    }
+}
