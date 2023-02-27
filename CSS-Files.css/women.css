@@ -88,6 +88,35 @@ a{
     display: flex;
     margin-top: 15px;
 }
+
+#filter{
+    width: 35%;
+    margin: auto;
+    margin-left: 650px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    padding: 10px;
+    border-radius: 3px;
+}
+#upper{
+ width: 90%;
+}
+#lower{
+    width: 90%;
+}
+#filter-btn{
+    padding: 4px 15px;
+    font-size: medium;
+    border: none;
+    background-color: black;
+    color: #fff;
+    border-radius: 3px;
+}
+#filter-btn:hover{
+    font-weight: bold;
+}
+
 #mid-07{
     width: 35%;
 }
@@ -181,6 +210,9 @@ a{
         width: 450px;
         height: 30px;
     }
+    #filter{
+        margin-left: 500px;
+    }
 }
 @media only screen and (max-width: 720px){
     .nav1{
@@ -190,6 +222,9 @@ a{
     .searchIcon{
         width: 250px;
         height: 30px;
+    }
+    .nav2{
+        margin-top: 50px;
     }
     #banner > img{
         width: 100%;
@@ -201,6 +236,9 @@ a{
         position: absolute;
         left: 50px;
         margin-top: 170px;
+    }
+    #filter{
+        margin-left: 350px;
     }
     .mid-7 > div{
         display: grid;
@@ -239,6 +277,9 @@ a{
         left: 20px;
         margin-top: 110px;
         font-size: x-small;
+    }
+    #filter{
+        margin-left: 100px;
     }
     #mid-07{
         display: none;

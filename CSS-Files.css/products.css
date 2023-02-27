@@ -65,6 +65,35 @@ a{
 .nav2 > a:hover{
     box-shadow: black 0px 2px;
 }
+
+#filter{
+    width: 30%;
+    margin: auto;
+    margin-left: 900px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    padding: 10px;
+    border-radius: 3px;
+}
+#upper{
+ width: 90%;
+}
+#lower{
+    width: 90%;
+}
+#filter-btn{
+    padding: 4px 10px;
+    font-size: medium;
+    border: none;
+    background-color: black;
+    color: #fff;
+    border-radius: 3px;
+}
+#filter-btn:hover{
+    font-weight: bold;
+}
+
 .hello{
     width: 100%;
     display: flex;
@@ -176,6 +205,9 @@ a{
         width: 450px;
         height: 30px;
     }
+    #filter{
+        margin-left: 680px;
+    }
 }
 @media only screen and (max-width: 720px){
     .nav1{
@@ -185,6 +217,9 @@ a{
     .searchIcon{
         width: 250px;
         height: 30px;
+    }
+    .nav2{
+        margin-top: 50px;
     }
     #banner > img{
         width: 100%;
@@ -196,6 +231,9 @@ a{
         position: absolute;
         left: 50px;
         margin-top: 170px;
+    }
+    #filter{
+        margin-left: 450px;
     }
     #mid-7{
         display: grid;
@@ -235,6 +273,9 @@ a{
         box-sizing: border-box;
         margin-top: 90px;
         margin-bottom: 15px;
+    }
+    #filter{
+        margin-left: 130px;
     }
     #mid-07{
         display: none;

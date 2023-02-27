@@ -1,26 +1,49 @@
+
+let ProductData = JSON.parse(localStorage.getItem("card-data")) || [];
+let Container = document.getElementById("mid-7");
 let form = document.querySelector("form")
+let filterBtn = document.getElementById("filter-btn")
+let fetchdata22 = [];
 
 async function FetchData(){
     try{
         let request = await fetch("https://63f73a4be40e087c9589faa6.mockapi.io/products");
         request = await request.json();
         //console.log(request);
-        Display(request);
+        fetchdata22 = request
+        Display(fetchdata22);
     }catch(error){
         console.log(error);
     }
 }
 FetchData();
 
-let ProductData = JSON.parse(localStorage.getItem("card-data")) || [];
-let Container = document.getElementById("mid-7");
 
 form.addEventListener("submit",(e) => {
     e.preventDefault();
-    let searchData = request.filter((element) => element.title.toLowerCase().includes(form.search.value.toLowerCase()));
-    Display(searchData);
-    console.log(searchData)
+    let searchData = form.search.value;
+
+    let filters = fetchdata22.filter((element) =>{
+        if(element.title.toUpperCase().includes(searchData.toUpperCase()) === true){
+            return true;
+        }else{
+            return false;
+        }
+    })
+    Display(filters);
+    console.log(filters)
 }) 
+
+
+filterBtn.addEventListener("click", ()=> {
+    let lower = document.getElementById("lower").value
+    let upper = document.getElementById("upper").value
+
+    let filterdData = fetchdata22.filter((element, index) => {
+      return lower <= element.disprice && element.disprice <= upper
+    })
+    Display(filterdData);
+  })
 
 function Display(data){
     Container.innerHTML = "";

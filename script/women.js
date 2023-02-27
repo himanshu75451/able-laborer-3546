@@ -12,7 +12,6 @@ img.src = bannerimg[0];
 
 function slideshowfun(image){
     setInterval(function(){
-        console.log(x)
         x++;
         if(x===image.length) x=0;
         img.src = image[x];
